@@ -1,0 +1,70 @@
+#owNav{
+	width:96%;
+	height:62px;
+	margin:0 auto;
+	/*position: absolute;
+	z-index: 10000;*/
+	transform:rotate(0deg);
+	background: rgba(36, 53, 86,0.9) url(../images/nav-logo-sm.png) no-repeat  25px 0px;
+}
+#owNav .nav-ul li{  
+	float:left;
+	width:99px;
+	height：62px;
+	line-height: 62px;
+	text-align:center;
+	font: normal normal normal 17px/62px "microsoft yahei",Arial,sans-serif;;
+}
+#owNav .nav-ul li i {
+	display: inline-block;
+	width:12px;
+	height:7px;
+	background:url(../images/caret-gray.png);
+	margin-left:8px;
+	vertical-align:middle;
+}
+#owNav .nav-ul li a {
+	color:#B5B8C2;
+}
+#owNav .nav-ul li:hover{
+	background: rgba(73,83,108,0.8);
+}
+#owNav .nav-ul li:hover a{
+	color:#FFFFFF;
+}
+#owNav .pay-game{
+	display: inline-block;
+	height:62px;
+	width:99px;
+	background: #F7931E;
+	font: normal normal normal 17px/62px "microsoft yahei",Arial,sans-serif;;
+	color:#fff;
+	text-align:center;
+}
+#owNav .pay-game:hover{
+	background: rgba(248,158,53,0.95);
+
+}
+#owNav .overview {
+	height:42px;
+	width:100%;
+	margin:0 auto;
+	background: rgba(73,83,108,0.95);
+	padding-left:;
+}
+#owNav .overview li{
+	float:left;
+	line-height: 42px;
+	width:99px;
+	
+	text-align:center;
+}
+#owNav .overview li a{
+	color:#B5B8C2;
+	padding-left:3px;
+	border-left:1px solid rgba(25,150,196,0);
+}
+#owNav .overview li a:hover{
+	color:#fff;
+	border-left:1px solid rgba(25,150,196,1);
+}

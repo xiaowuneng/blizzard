@@ -1,0 +1,610 @@
+/*body{
+	height:6000px;
+}*/
+.header-bg{
+	height:624px;
+	width:100%;
+	overflow: hidden;
+}
+.header-bg #scene div{
+	position:absolute;
+	width:1366px;
+}
+.header-con{
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10005;
+}
+.navbar {
+	height:40px;
+	margin-bottom:25px;
+	background: rgba(82,100,146,0.5);
+}
+.navbar li{
+	float:left;
+	padding:0 15px;
+	line-height: 40px;
+	font-size:15px;
+	font-family: "microsoft yahei", arial, sans-serif;
+	cursor:pointer;
+}
+.navbar li:hover{
+	color:#fff;
+}
+.navbar .s-logo {
+	width:65px;
+	height:30px;
+	line-height: 40px;
+	padding:0px 20px 0 0 ;
+	margin-top:5px;
+	background:url(../images/icon-sprite.png) no-repeat -15px -80px;
+}
+.navbar .s-logo:hover{
+	background:url(../images/icon-sprite.png) no-repeat -15px -124px;
+} 
+.navbar li{
+	color:rgba(255, 255, 255, 0.701961);
+	font-size: 15px;
+}
+.navbar li i {
+	display: inline-block;
+	line-height: 40px;
+	width:12px;
+	height:8px;
+	background:url(../images/icon-sprite.png) no-repeat -147px -132px;
+}
+.hide-Menu{
+	background: rgba(23,29,39,0.99);
+	/*border:1px solid #424955;*/
+}
+.hide-Menu .hide-Menu-game {
+	width:995px;
+	height:308px;
+	margin:0 auto;
+	position: relative;
+}
+.hide-Menu .hide-Menu-game li{
+	float:left;
+	
+}
+.hide-Menu .hide-Menu-game a{
+	display: inline-block;
+	margin:40px 15px;
+	position:relative; /*用于动画*/
+	/*top:-100px;*/
+	/*height:308px;	
+	width:165px;*/
+}
+.hide-Menu .hide-Menu-game a .img-border{
+	border:1px solid #454C5A;
+}
+.hide-Menu .hide-Menu-game a .img-border:hover{
+	border:1px solid #5E626B;
+}
+.hide-Menu .hide-Menu-game img{
+	width:133px;
+	height:226px;
+}
+.hide-Menu s{
+	display: inline-block;
+	border-top: 1px solid #424955;
+	border-left: 1px solid #424955;
+	background: #161B23;
+	width:8px;
+	height:8px;
+	transform:rotate(45deg);
+	position: relative;
+	top:-317px;
+	left:170px;
+	/*z-index:100;*/
+}
+.hide-Menu .hide-Menu-gameMatch {
+	width:995px;
+	margin:0 auto;
+}
+.hide-Menu .hide-Menu-gameMatch a{
+	display: inline-block;
+	height:235px;
+	width:192px;
+	padding:20px 0;
+	text-align:center;
+	color:#B9BBBE;
+	position:relative;/*用于动画*/
+}
+.hide-Menu .hide-Menu-gameMatch a:hover{
+	background: #222831;
+}
+.hide-Menu .hide-Menu-gameMatch img{
+	display: inline-block;
+	width:192px;
+	height:192px;
+}
+.hide-Menu .log-in{
+	width:318px;
+	height:166px;
+	border:1px solid #444B58;
+	border-top:none;
+	float:right;
+	margin-right:25px;
+	background: #141921;
+	font:16px/24px  "Source Sans Pro",Helvetica,Arial,sans-serif;;
+	color:#BABCBF;
+}
+.hide-Menu .log-in button{
+	width:278px;
+	height:38px;
+	border:1px solid #00AEFF;
+	background: #4E9CD6;
+	margin:20px;
+	font:16px/24px  "Source Sans Pro",Helvetica,Arial,sans-serif;;
+	color:#fff;
+}
+.hide-Menu .log-in button:hover{
+	background: #00AEFF;
+}
+.hide-Menu .log-in a{
+	display:block;
+	height:24px;
+	padding:10px 20px;
+	border-top:1px solid #2E333F;
+}
+.hide-Menu .log-in a:hover{
+	background-color: rgba(255,255,255,.05);
+}
+.hide-Menu .log-in a i{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+}
+.hide-Menu #hide-one{
+	height: 308px;
+	width: 100%;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 20000;
+	border: 1px solid rgb(69, 76, 90);
+	background: rgba(23, 29, 39,0.99);
+	opacity:0.99;
+}
+.hide-Menu #hide-Two{
+	height:275px;
+	width:100%;
+	position:absolute;
+	top:40px;
+	left:0;
+	z-index: 20000;
+	border:1px solid rgb(69, 76, 90);
+	background: rgba(23, 29, 39,0.99);
+	opacity:0.99;
+}
+.hide-Menu #hide-Three{
+	position:absolute;
+	top:40px;
+	right:0;
+	z-index: 20000;
+	opacity:0.99;
+}
+.mask{ /*页面遮罩*/
+	position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:10002;
+	background-color: rgba(0,0,0,.5);
+}
+.outter{
+	height:56px;
+	width:90%;	
+	margin:0 auto;
+	padding:5px 0;
+	position: relative;
+	margin-bottom: 25px;
+}
+.outter a{
+	display: inline-block;
+	height:56px;
+	background: #ffb033;
+	border-radius: 3px;
+}
+.outter a:hover,.current{
+	opacity:0.85;
+}
+.outter a span{
+	color:#fefefe;
+	font-weight: 700;
+	font-size:2.2rem;
+	margin-top:16px;
+	font-family: "microsoft Yahei";
+}
+.outter video{
+	width:150px;
+	height:85px;
+	position:absolute;
+	top:-10px;
+	left:15px;
+	z-index: 5;
+	border-radius:3px;
+}
+.outter .video-mask{
+	width:150px;
+	height:85px;
+	background: rgba(51,51,51,.8);
+	border-radius:3px;
+	position: absolute;
+	top:-10px;
+	left:15px;
+	z-index:6;
+}
+.video-box{
+	position:absolute;
+	/*top:0;*/
+	/*bottom:0;*/
+	left:50%;
+	margin-left:-40%;
+	z-index: 30000;
+	width:80%;
+	height:100%;
+	background: #040D16;
+	border:1px solid #031E2C;
+}
+.video-box .head{
+	height:78px;
+	border-bottom:1px solid #031E2C;
+	font:40px/78px "Microsoft Yahei";
+	color:#405275;
+	text-align:center;
+}
+.video-box .head i{
+	display: inline-block;
+	width:36px;
+	height:36px;
+	background: url(../images/OOEf.png);
+	margin:-70px 5px 0 0 ;
+	cursor:pointer;
+}
+.video-box #game-video{
+	width:80%;
+	/*height:85%*/
+	margin:40px auto;
+}
+.news-panels{
+	height:490px;
+	width:90%;
+	margin:0 auto;
+	text-align: center;
+}
+.news-panels h2{
+	font:italic 28px "microsoft Yahei";
+	margin-bottom:30px;
+	color:#405275;
+}
+.news-panels div{
+	width:570px;
+	height:250px;
+	position: relative;
+}
+.news-panels div p{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	height:54px;
+	width:100%;
+	font: italic 1.2rem/54px "microsoft yahei",impact,sans-serif;
+	color:#f0edf2;
+	background: rgba(0,0,0,0.7);
+	text-indent:-250px;
+}
+.news-panels .all-news{
+	display: inline-block;
+	width:308px;
+	height:50px;
+	border:2px solid #00a5e2;
+	clear:both;
+	margin-top:50px;
+	font: 700 1.8rem/50px "microsoft Yahei";
+	color:#00a5e2;
+}
+.news-panels .all-news:hover{
+	background: #00a5e2;
+	color:#fff;
+}
+#inner{
+	height:940px;
+	width:100%;
+	/*background: url(../images/future1.jpg)  center;
+	background-size:auto 100%;*/
+	color:#fff;
+	font-family: "microsoft Yahei";
+	text-align:center;
+	overflow:hidden;/*解决h2塌陷*/
+	position: relative;
+}
+#inner .bg{
+	height:940px;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#inner .bg1{
+	background: url(../images/future0.jpg) center;
+	background-size:auto 100%;	
+}
+#inner .bg2{
+	background: url(../images/future1.jpg) center;
+	background-size:auto 100%;
+}
+#inner .bg3{
+	background: url(../images/future2.jpg) center;
+	background-size:auto 100%;
+}
+#inner h2{
+	font-size:5rem;
+	margin:100px 0;
+	font-style:italic;
+}
+#inner p{
+	font-size: 1.8rem;
+	line-height: 1.47;
+	margin-top: .5em;
+	color: #f0edf2;
+}
+#inner a{
+	display: inline-block;
+	height:35px;
+	margin-top: 90px;
+	font: 700 2rem/35px "Microsoft Yahei";
+    padding: 9px 40px 10px;
+    color: #fefefe;
+    background-color: #f7931e;
+    border-radius: 2px;
+}
+#inner a:hover{
+    background-color: #FFB033;
+}
+.heros {
+	height: 1660px;
+	width:100%;
+	margin-top:1px;
+	background:url(../images/home-candy.jpg) no-repeat center -300px;
+	background-size: auto 100%;
+	border-bottom:1px solid red;
+}
+.container {
+	text-align: center;
+	overflow:hidden; /*h2塌陷*/
+}
+.container h2{
+	margin:50px 0 25px 0;
+	font:italic 4.2rem "Microsoft Yahei";
+	color:#405275;
+}
+.container p{
+	font: normal normal normal 25px/40px "microsoft yahei",Arial,sans-serif;
+	color:#405275;
+}
+#hero-name{
+	width:96%;
+	height:175px;
+	margin:0px auto;
+	margin-top:150px;
+	padding:10px 0 15px 0;
+	background-image: linear-gradient(90deg,rgba(42,55,81,0)0,rgba(42,55,81,.8)25%,rgba(42,55,81,.8)75%,rgba(42,55,81,0));
+	background-position: 50%;
+	background-size: 1920px auto;
+	color:#F0EDF2;
+}
+#hero-name h2{
+	font:italic 4rem "Microsoft Yahei";
+	margin:15px 200px 0px 0px;
+}
+#hero-name p{
+	display:inline-block;
+	margin:110px -275px 0px 0px;
+	width:425px;
+	color: #f0edf2;
+    text-align: center;
+    font:16px/25px "Microsoft Yahei";
+}
+#hero-img{
+	position:absolute;
+	top:-125px;
+	left:250px;
+	z-index:2;
+}
+#heros-list{
+	width:90%;
+	height:276px;
+	margin:145px auto;
+}
+#heros-list li{
+	width:85px;
+	height:140px;
+	text-align:center;
+	transform:skewX(-5deg);
+	display: inline-block;
+}
+#heros-list li div{
+	width:70px;
+	height:85px;
+	background: #474645;
+	border-radius:5px;
+	margin:6px auto;
+	overflow:hidden;
+}
+#heros-list li img{
+	width:96px;
+	margin-left:-10px;
+}
+#heros-list li span{
+	font-family: "Microsoft Yahei";
+	font-size:13px;
+	color:#333333;
+}
+.current1{ /*div:hover*/
+	transform: scale(1.2,1.2);
+	transform-origin:center center;
+	background: #F7931E;
+	/*zoom:1.1;*/
+}
+.current2{ /*span:hover*/
+	position:relative;
+	top:-6px;
+	left:0;
+	padding:0 5px;
+	height:20px;
+	background: #F0EDF2;
+	z-index:10;
+	border-radius: 5px;
+}
+.buy-game{
+	height:1055px;
+	background: url(../images/dorado-desktop.jpg) no-repeat center center;
+	background-size: 100% ;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.anchor-bottom{
+	height:655px;
+	width:100%;
+	background:url(../images/bg-museum.jpg) no-repeat;
+	background-size: 100% auto;
+	margin-top:424px;
+}
+.anchor-bottom .column{
+	margin: 75px 225px 0 0;
+	width:425px;
+	text-align:center;
+}
+.anchor-bottom .column h2{
+	background: -webkit-linear-gradient(top,#3f6493 10%,#345177 100%);
+	background-image: -o-linear-gradient(transparent,transparent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0 4px 5px rgba(60,72,96,.5);
+	font:italic 70px "microsoft yahei",impact,sans-serif;
+}
+.anchor-bottom .column p{
+	font:28px "microsoft yahei",impact,sans-serif;
+	color:#405275;
+	padding:20px 0 40px 0;
+}
+.anchor-bottom .column a{
+	display: inline-block;
+	width:218px;
+	height:57px;
+	background: #FF9C00;
+	text-align:center;
+	font:900 34px/57px "microsoft yahei",impact,sans-serif;
+	color:#fff;
+}
+.anchor-bottom .column a:hover{
+	background: #FFB033;
+}
+.footer-buy-bar{
+	height:148px;
+	border-top:5px solid #989798;
+	background: url(../images/buy-bar-bg.jpg) center top no-repeat;
+	text-align:center;
+	padding:80px 0;
+}
+.footer-buy-bar .pay{
+	display:inline-block;
+	width:195px;
+	height:55px;
+	background: #FF9C00;
+	color:#000;
+	border-radius:2px;
+	font:700 28px/55px "microsoft yahei",impact,sans-serif;
+}
+.footer-buy-bar .buy-tips{
+	color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px 0;
+    vertical-align: top;
+}
+.footer-buy-bar .buy-tips span{
+	display: inline-block;
+	width:22px;
+	height:21px;
+	background:url(../images/buytips-icon.png);
+	vertical-align: middle;
+	margin-top:-2px;
+}
+.footer-buy-bar .join-us a{
+	display:inline-block;
+	width:150px;
+	height:45px;
+	font:18px/45px "microsoft yahei",impact,sans-serif;
+	color:#FFC70E;
+	border:2px solid #FFC70E;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+.footer-buy-bar .join-us a:hover{
+	color: #fff;
+	border-color: #fff;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+#footer{
+	height:325px;
+	width:100%;
+	background:#202020;
+	font-size:12px;
+	border-top:1px solid #414141;
+}
+#footer .footerWrap{
+	width:75%;
+	height:230px;
+	margin:0 auto;
+	border-bottom:1px solid #414141;
+}
+#footer .footerWrap .cs span{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	background: url(../images/sprite-24-blue.png) no-repeat;
+	vertical-align:middle;
+}
+#footer .footerWrap .cs a{
+	margin-right:30px;
+	font:14px "Microsoft Yahei";
+	color:#B7B7B7;
+}
+#footer .footerWrap .cs a:hover{
+	color:#fff;
+}
+#footer .footerWrap ul li{
+	float:left;
+	font:500 16px "Microsoft Yahei";
+}
+#footer .footerWrap ul li a {
+	font:14px "Microsoft Yahei";
+	color:#fff;
+	margin:0 15px;
+}
+#footer .footerWrap .info p{
+	line-height: 1.6;
+}
+#top-btn{
+	width: 40px;
+	height: 30px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(255,255,255,.25);
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 12px;
+	z-index: 501;
+	opacity:0;
+}

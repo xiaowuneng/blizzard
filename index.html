@@ -1,0 +1,388 @@
+<!-- 仅支持 1366*768 分辨率 chrome浏览器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>守望先锋官方网站</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src = "js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src = "js/common.js" defer = "defer"></script>
+	<script type="text/javascript" src = "js/index.js" defer = "defer"></script>
+	<link rel="shortcut icon" type="text/css" href="Foverwatch.ico">
+
+
+</head>
+<body>
+	<div class="header-bg fixed" style = "position: relative;">
+		<!-- <img src="images/timg.jpg" style = "width:100%"> -->
+		<video autoplay="autoplay" loop="loop" class="video" style = "height:527px;width:100%;position:absolute;top:0;z-index:-1;">
+			<source type="video/mp4" src="video/Embers.mp4">
+		</video>
+		<ul id = "scene">
+			<li class="layer" data-depth="0.80">
+				<div style = "bottom:-735px;left:200px;z-index:1;">
+					<img src="images/header-img/hero-left-345.png" style = "width:29%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.90">
+				<div style = "bottom:-665px;left:110px;z-index:2;">
+					<img src="images/header-img/hero-left-2.png" style = "width:19%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="1">
+				<div style = "top:-70px;left:-115px;z-index: 3; ">
+					<img src="images/header-img/hero-left-1.png" style = "width:28%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.70">
+				<div style = "top:120px;left:335px;z-index:1;">
+					<img src="images/header-img/hero-left-6.png" style = "width:15%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.60">
+				<div style = "top:95px;left:800px;z-index: 1;">
+					<img src="images/header-img/hero-right-6.png" style = "width:23%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.70">
+				<div style = "top:345px;left:685px;z-index: 1;">
+					<img src="images/header-img/hero-right-345.png" style = "width:29%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.80">
+				<div style = "top:260px;left:890px;z-index: 2;">
+					<img src="images/header-img/hero-right-2.png" style = "width:30%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.90">
+				<div style = "left:1090px;z-index: 3;">
+					<img src="images/header-img/hero-right-1.png" style = "width:26%;">
+				</div>
+			</li>
+			<li class="layer" data-depth="0.50">
+				<div style = "top:200px;left:460px;z-index:1;">
+					<img src="images/header-img/overwatch-logo.png" style = "width:30%;">" <!-- style = "height:624px"> -->			
+				</div>
+			</li>
+		</ul>
+		
+		
+
+
+		<div style = "position: absolute;left:0;bottom:0">
+			<img src="images/img-deco.png" style = "width:100%;height:30px">
+		</div>
+	</div>
+	<div class="header-con">
+		<div class="navbar" id = "navBar">
+			<div class="w">
+				<ul class = "fl">
+					<li class = "s-logo"></li>
+					<li class = "stair-mune" style = "color:#fff">游戏
+						<i>
+						</i>
+					</li>
+					<li>商城</li>
+					<li class = "stair-mune">电竞
+						<i>
+						</i>
+					</li>
+				</ul>
+				<ul class = "fr">
+					<li>支持</li>
+					<li class = "stair-mune">你的通行证
+						<i>
+						</i>
+					</li> 
+				</ul>
+			</div>
+		</div>
+		<div class = "hide-Menu" id = "hideMenu">
+			<div id = "hide-one" class = "hide">
+				<ul class = "hide-Menu-game" id = "hide-game-ul"><!-- 隐藏 -->
+						<li>
+							<a href="javascript:;" style = "top:-50px">
+								<img src="images/poster-ow.jpg" class = "img-border">
+								<img src="images/poster-overlay-ow.png" style = "position: absolute;top:-17px;left:-24px;width:156px;height:244px;z-index:2;">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" style = "top:-100px">
+								<img src="images/poster-wow.jpg" class = "img-border">
+								<img src="images/poster-overlay-wow.png" style = "position: absolute;top:-17px;left:1px;width:132px;height:244px;z-index:3;">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" style = "top:-150px">
+								<img src="images/poster-hs.jpg" alt="" class = "img-border">
+								<img src="images/poster-overlay-hs.png" alt="" style = "position: absolute;top:-17px;left:1px;width:132px;height:244px;z-index:4;">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" style = "top:-200px">
+								<img src="images/poster-heroes.jpg" alt="" class = "img-border">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" style = "top:-250px">
+								<img src="images/poster-sc2.jpg" alt="" class = "img-border">
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;" style = "top:-300px">
+								<img src="images/poster-d3.jpg" alt="" class = "img-border">
+							</a>
+						</li>
+				</ul>
+				<s></s>	
+			</div>
+			<div id = "hide-Two" class = "hide">
+				<ul class = "hide-Menu-gameMatch" id = "hide-gameMatch-ul"><!-- 隐藏 -->
+					<a href="javascript:;" style = "top:-250px">
+						<img src="images/esports-overwatch.png">
+						<span>守望先锋联赛</span>
+					</a>
+					<a href="javascript:;" style = "top:-200px">
+						<img src="images/esports-overwatch-world-cup.png">
+						<span>守望先锋世界杯</span>
+					</a>
+					<a href="javascript:;" style = "top:-150px">
+						<img src="images/esports-ow.png.png">
+						<span>守望先锋电竞网</span>
+					</a>
+					<a href="javascript:;" style = "top:-100px">
+						<img src="images/esports-gold.png">
+						<span>守望先锋黄金系列赛</span>
+					</a>
+					<a href="javascript:;" style = "top:-50px">
+						<img src="images/esports-heroes.png">
+						<span>风暴英雄世界锦标赛</span>
+					</a>
+				</ul>
+				<s style = "top:-284px;left:306px;"></s>	
+			</div>
+			<div class = "log-in hide" id = "hide-Three"><!-- 隐藏 -->
+				<button>登录</button>
+				<a href="javascript:;">
+					<i style = "background: url(images/icon-sprite.png) no-repeat -142px -15px;"></i>
+					<span>账户</span>
+				</a>
+				<a href="javascript:;">
+					<i style = "background: url(images/icon-sprite.png) no-repeat -200px -16px;"></i>
+					<span>注册</span>
+				</a>
+				<s style = "top:-181px;left:287px"></s>	
+			</div>
+		</div>
+		<div id = "owNav">
+			<div class = "clearfix">
+				<ul style = "margin-left:245px" class = "nav-ul">
+					<li id = "owNavGame">
+						<a href="javascript:;">游戏</a>
+						<i></i>
+					</li>
+					<li><a href="javascript:;">英雄</a></li>
+					<li><a href="javascript:;">活动</a></li>
+					<li><a href="javascript:;">视频图片</a></li>
+					<li><a href="javascript:;">新闻</a></li>
+					<li><a href="javascript:;">下载</a></li>
+					<li><a href="javascript:;">生涯数据</a></li>
+					<li><a href="javascript:;">电子竞技</a></li>
+					<li><a href="javascript:;">论坛</a></li>
+				</ul>
+				<a href="javascript:;" class = "pay-game fr">购买</a>
+			</div>
+			<ul class = "overview hide" ><!-- 概述 -->
+				<li style = "margin-left:245px"><a href="javascript:;">概述</a></li>
+				<li><a href="javascript:;">补丁</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "mask hide" id = "body-mask"></div> <!-- 页面遮罩 -->
+	<div style = "background: #F0EDF2;"> <!-- 只用于加通栏背景色 outer(游戏介绍)-->
+		<div class="outter">
+			<a href="javascript:;" style = "width:340px;margin-right:25px" class = "fl">
+				<span class = "fr" style = "margin-right:25px">游戏介绍</span>
+			</a>
+			<div>
+				<video autoplay="" loop="" id="game-media">
+				   <source src="video/gameplay-trailer-1104.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class = "video-mask" style = "opacity: 0">
+			</div>
+			<img src="images/youtube-btn-ylw.png" title = "游戏介绍" style = "width:45px;position: absolute;top:10px;left:67px;z-index: 10">
+			<a href="javascript:;" style = "width:300px;" class = "fr">
+				<span class = "fl" style = "margin-left:25px;">立即购买</span>
+			</a>
+			<img src="images/btn-tracer.png" style = "position: absolute;top:-73px;right:4px;z-index:6;">
+		</div>
+		<div class="news-panels">
+			<h2>新闻公告</h2>
+			<div class = "fl" style = "margin:0 20px;">
+				<a href="javascript:;">
+					<p>最新活动 | 《守望先锋》国王行动</p>
+					<img src="images/OW_Panel-L_m01.jpg" style = "width:100%">
+				</a>
+			</div>
+			<div class = "fl">
+				<a href="javascript:;">
+					<p>《守望先锋》数字漫画：《危机》</p>
+					<img src="images/OW_Panel-L_JP.jpg" style = "width:100%">
+				</a>
+			</div>
+			<a href="javascript:;" class = "all-news">查看所有新闻</a>
+		</div>
+	</div>
+
+	<!-- 游戏介绍视频 -->
+	<div class="video-box hide" >
+		<div class="head">
+			<div class = "title">游戏介绍</div>
+			<i id = "close-btn" class = "fr"></i>
+		</div>
+		<div id="game-video" style="">
+			<video width="100%" height="100%" controls="controls"  preload="auto"><!-- autoplay="autoplay" -->
+				<source src="video/video-mobile.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+
+	<div id = "inner">
+		<div class = "bg1 bg"></div>
+		<div class = "bg2 bg"></div>
+		<div class = "bg3 bg"></div>
+		<div style = "width:90%;margin:0 auto;position: absolute;left:50%;margin-left: -45%;z-index:10">
+			 <h2>为未来而战</h2>
+	            <p>军人、科学家、冒险家、奇人异士。
+	                <br>
+	                <br>在人类陷入空前危机之时，来自全球各个国家的特种精英们，为了结束战争、重铸秩序而团结在了一起。他们，就是<strong>守望先锋</strong>。
+	                <br>
+	                <br>英雄们最终结束了这场危机，人类文明在随后的数十年内和平共存并迎来了一个探索、革新和发现的新时代。尽管如此，守望先锋在多年后逐渐被人们所遗忘，最终难逃被解散的命运。
+	                <br>
+	                <br> 
+	            </p>
+	            <p class="intro-text u-align-center u-center-block">如今，世界各地争端再起，人们都翘首期待着新英雄的出现，或旧英雄的归来。
+	                <br>
+	                <br>你愿意与我们共同抗争吗？ 
+	            </p>
+	            <a href="javascript:;">探索游戏</a>
+		</div>
+	</div>
+	<div style = "height:1100px;overflow: hidden;"><!-- 去除多余背景图片 heros-->
+		<div class="heros">
+			<div class="container">
+	    		<h2 class="">各具特色的英雄</h2>
+	    		<div class=""></div>
+	        	<p>不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。<br>掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！</p>
+	        </div>
+			<div style = "position:relative;">
+				<div id = "hero-name">
+					<h2 class = "fr">奥丽莎</h2>
+					<p class = "fr">维护努巴尼秩序并保护努巴尼人民的维和机器人。</p>
+				</div>
+				<div id = "hero-img">
+					<img src="images/img/14.png" style="height:450px;" >
+				</div>
+			</div>
+			<ul id = "heros-list">
+				<li>
+					<a href = "javascript:;">
+						<div>
+							<img src="images/img/img-list/0.png" id = "img">
+						</div>
+						<span>源氏</span>
+					</a>
+				</li>
+			</ul>
+	    </div>
+	</div>
+	<div class = "buy-game">
+		<div class = "anchor-bottom">
+			<img src="images/default-pc.png" style = "height:1100px;margin-top:-150px">
+			<div class = "column fr">
+				<h2>这个世界需要英雄</h2>
+				<p>现在即是未来，你来吗？</p>
+				<a href = "javascript:;">立即购买</a>
+			</div>
+		</div>
+	</div>
+	<div class = "footer-buy-bar">
+	    <a class="pay">购买</a>
+	    <p class="buy-tips">
+	    	<span></span>
+	    	<strong style = "color:#F0BB0E">游戏安装提醒：</strong>安装游戏需要64位的 Windows® 7/Windows® 8/Windows® 10操作系统 (不支持Mac系统)  
+	    	<a href="javascript:;" style = "color:#F0BB0E;text-decoration:underline;">查看详情&gt;&gt;</a>
+	    </p>
+	    <p class="join-us">
+	    	<a href="javascript:;">加入我们</a>
+	    </p>
+	</div>
+	<div id="footer">
+	    <div class="footerWrap">
+            <div class="cs" style = "margin:50px 0">
+                <a href = "javascript:;">
+                    <span style = "background-position:-96px 0"></span> &nbsp;&nbsp;在线客服
+                </a>
+                <a href = "javascript:;">
+                    <span style = "background-position:-144px -24px"></span> &nbsp;&nbsp;反馈
+                </a>
+                <a href = "javascript:;">
+                    <span style = "background-position:-24px -120px"></span> &nbsp;&nbsp;加入我们
+                </a>
+            </div>
+	        <div class="cprt">
+	            <a href = "javascript:;"><img src="images/blizzard.png" style = "margin:0 30px 35px 0"></a>
+	            <a href = "javascript:;"><img src="images/logo_ne.png"></a>
+	            <div class="info fr">
+		            <ul class="clearfix" style = "margin-bottom: 20px;">
+		               <li><a href = "javascript:;" style = "margin-left:0">隐私</a>|</li>
+		               <li><a href = "javascript:;">法律条款</a>|</li>
+		               <li><a href = "javascript:;">API</a></li>
+		            </ul>
+		            <p>©2017 暴雪娱乐股份有限公司版权所有 由上海网之易网络科技发展有限公司运营<a href="http://www.battlenet.com.cn/legal-cn/infringementnotice"> 著作权侵权</a>&nbsp;新广出审[2016]378号</p>
+		            <p>文网游进字[2016]0025号&nbsp;
+		            	<a href="http://blz.nos.netease.com/1/frame/cprt/license.jpg">沪网文[2014]0731-161号</a>&nbsp;
+		            	<a>增值电信业务经营许可证编号：沪B2－20080012</a>
+		            </p>
+		            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502032167号</p>
+		            <p style = "margin:15px 0">
+		                <a href = "javascript:;">
+		                	<img src="images/police.png">
+		                </a>
+		                <a href = "javascript:;">
+		                	<img src="images/zx110.png">
+		                </a>
+		                <a href = "javascript:;">
+		                	<img src="images/sgs-icon.png">
+		                </a>
+		                <a  href = "javascript:;">
+		                	<img src="images/icon20120516.png">
+		                </a>
+		                <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+		                <a>家长监护工程&gt;</a>
+		            </p>
+	        	</div>
+	        </div>
+	    </div>
+	    <div style = "width:75%;margin:4px auto;text-align:center;line-height: 20px;">
+	        <p class="tips">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+	            <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+	        </p>
+	    </div>
+	</div>
+	<a href = "#" id = "top-btn">TOP</a>
+
+
+	<script type="text/javascript" src="js/jquery.parallax.js"></script><!-- 用于头部3D动画 -->
+		<script type="text/javascript">
+			$('#scene').parallax();
+		</script>
+	
+	
+</body>
+</html>
